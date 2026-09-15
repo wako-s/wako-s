@@ -58,7 +58,14 @@ a{color:var(--deep2);}
 @media(max-width:1000px){ .wave-rail{width:80px;opacity:.4;} }
 @media(max-width:620px){ .wave-rail{display:none;} }
 /* コンテンツは白背景の上。波は装飾として上に薄く重なる（本文は中央でバランス） */
-.page-wrap{position:relative;z-index:1;background:var(--bg);}
+.page-wrap{
+  position:relative;z-index:1;
+  background-color:var(--bg);
+  background-image:url("wako_background.png");
+  background-repeat:no-repeat;
+  background-position:top right;
+  background-size:100% auto;
+}
 
 /* -------- header / nav (page-to-page tabs, mirrors reference site) -------- */
 header.site-header{
