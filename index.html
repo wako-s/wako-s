@@ -37,6 +37,8 @@ h1,h2,h3,.top-hero h1,.creed-box p{
 .jp-body{line-break:strict;overflow-wrap:normal;word-break:normal;}
 
 a{color:var(--deep2);}
+.tel-link{text-decoration:none;}
+.tel-link:hover{text-decoration:underline;}
 /* -------- fixed vertical wave rail (right side, continues down every page) -------- */
 .wave-rail{
   position:fixed;top:0;right:0;bottom:0;width:120px;z-index:0;pointer-events:none;
@@ -219,7 +221,8 @@ table.infot td{padding:14px 0;border-bottom:1px solid var(--line);}
 .top-message .jp-body:last-child{margin-bottom:0;}
 .top-photo{margin:34px 0;}
 .top-photo img{width:100%;max-height:420px;object-fit:cover;display:block;}
-.top-contact{border-top:1px solid var(--line);padding-top:26px;margin-top:10px;display:flex;gap:34px;flex-wrap:wrap;font-size:16px;}
+.top-contact{border-top:1px solid var(--line);padding-top:26px;margin-top:10px;font-size:16px;}
+.top-contact-row{display:flex;gap:34px;flex-wrap:wrap;}
 .top-contact b{display:block;color:var(--deep2);font-size:18px;}
 
 .maps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
@@ -284,10 +287,15 @@ footer nav a{color:#4b5866;text-decoration:none;}
   </div>
 </div>
 <div class="top-contact">
-  <div><b>室蘭本社</b>0143-43-1811</div>
-  <div><b>苫小牧営業所</b>0144-34-3329</div>
-  <div><b>営業時間</b>平日 8:30〜17:00</div>
-  <div><a href="contact.html">お問い合わせはこちら →</a></div>
+  <div class="top-contact-row">
+    <div><b>室蘭本社</b><a class="tel-link" href="tel:0143431811">0143-43-1811</a></div>
+    <div><b>苫小牧営業所</b><a class="tel-link" href="tel:0144343329">0144-34-3329</a></div>
+    <div><b>構内事業所</b><a class="tel-link" href="tel:0143457911">0143-45-7911</a></div>
+  </div>
+  <div class="top-contact-row" style="margin-top:14px;">
+    <div><b>営業時間</b>平日 8:30〜17:00</div>
+    <div><a href="contact.html">お問い合わせはこちら →</a></div>
+  </div>
 </div>
 
 </main>

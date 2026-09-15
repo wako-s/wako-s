@@ -37,6 +37,8 @@ h1,h2,h3,.top-hero h1,.creed-box p{
 .jp-body{line-break:strict;overflow-wrap:normal;word-break:normal;}
 
 a{color:var(--deep2);}
+.tel-link,.contact-box .num{text-decoration:none;}
+.tel-link:hover,.contact-box .num:hover{text-decoration:underline;}
 /* -------- fixed vertical wave rail (right side, continues down every page) -------- */
 .wave-rail{
   position:fixed;top:0;right:0;bottom:0;width:120px;z-index:0;pointer-events:none;
@@ -261,9 +263,9 @@ footer nav a{color:#4b5866;text-decoration:none;}
 <p class="lead">現在、お問い合わせはお電話のみとさせていただいております。お気軽にご連絡ください。</p>
 <div class="contact-box">
   <div class="tel-list">
-    <div class="tel-line"><span class="tel-label">室蘭本社</span><span class="num">0143-43-1811</span></div>
-    <div class="tel-line"><span class="tel-label">苫小牧営業所</span><span class="num">0144-34-3329</span></div>
-    <div class="tel-line"><span class="tel-label">構内事業所</span><span class="num">0143-45-7911</span></div>
+    <div class="tel-line"><span class="tel-label">室蘭本社</span><a class="num" href="tel:0143431811">0143-43-1811</a></div>
+    <div class="tel-line"><span class="tel-label">苫小牧営業所</span><a class="num" href="tel:0144343329">0144-34-3329</a></div>
+    <div class="tel-line"><span class="tel-label">構内事業所</span><a class="num" href="tel:0143457911">0143-45-7911</a></div>
     <div class="tel-line"><span class="tel-label">営業時間</span><span class="num" style="font-size:18px;">平日 8:30〜17:00</span></div>
     <div class="tel-line"><span class="tel-label">定休日</span><span class="num" style="font-size:18px;">土・日・祝祭日</span></div>
   </div>
