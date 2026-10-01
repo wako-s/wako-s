@@ -56,14 +56,7 @@ a{color:var(--deep2);}
 @media(max-width:1000px){ .wave-rail{width:80px;opacity:.4;} }
 @media(max-width:620px){ .wave-rail{display:none;} }
 /* コンテンツは白背景の上。波は装飾として上に薄く重なる（本文は中央でバランス） */
-.page-wrap{
-  position:relative;z-index:1;
-  background-color:var(--bg);
-  background-image:url("wako_background.png");
-  background-repeat:repeat-y;
-  background-position:top right;
-  background-size:100% auto;
-}
+.page-wrap{position:relative;z-index:1;background:var(--bg);}
 
 /* -------- header / nav (page-to-page tabs, mirrors reference site) -------- */
 header.site-header{
@@ -311,7 +304,7 @@ footer nav a{color:#4b5866;text-decoration:none;}
   <li>福利厚生倶楽部（リロクラブ）導入済み</li>
   <li>唾液によるがんリスク検査を全社員対象に実施実績有</li>
   <li>年１回の健康診断は必須で受診</li>
-  <li>全社員を対象にした人間ドックと脳ドックを実施予定</li>
+  <li>対象者を限定した人間ドックと脳ドックを実施予定</li>
   <li>企業型確定拠出年金（DC）の導入を進行中</li>
 </ul>
 
